@@ -1,4 +1,5 @@
-title: Your awesome title
+title: wa7t's blog
+#show_excerpts: yes
 author:
   name: GitHub User
   email: your-email@domain.com
@@ -10,13 +11,15 @@ description: >
   in _config.yml. It will appear in your document head meta (for Google search
   results) and in your feed.xml site description.
 
-# Build settings
+# paginate: 2
+# paginate_path: "blog/page:num"
 
 theme: minima
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+#  - jekyll-paginate
 
 # Theme-specific settings
 
