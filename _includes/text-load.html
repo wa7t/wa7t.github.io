@@ -1,0 +1,20 @@
+<script type="text/javascript">    
+
+    async function LoadText(ele_id, file) {
+        let myObject = await fetch(file);
+        let myText = await myObject.text();
+        document.getElementById(ele_id).innerHTML = HTMLEncode(myText);
+    }
+
+    function HTMLEncode(html) {
+        let temp = document.createElement("div"); 
+        (temp.textContent != null) ? (temp.textContent = html) : (temp.innerText = html);
+        const output = temp.innerHTML;
+        temp = null;
+        return output;
+    }
+
+    // $(function(){
+    //     $("#src_code").load("{{ "assets/code/chrono.cc" | relative_url }}");
+    // });
+</script>
