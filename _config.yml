@@ -2,9 +2,7 @@ title: wa7t's blog
 #show_excerpts: yes
 author:
   name: wa7t
-
-github:
-  repository_url: "https://github.com/wa7t"
+  github_url: "https://github.com/wa7t"
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.

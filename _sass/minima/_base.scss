@@ -13,8 +13,6 @@ dl, dd, ol, ul, figure {
 
 }
 
-
-
 /**
  * Basic styling
  */
@@ -33,7 +31,6 @@ body {
   flex-direction: column;
   overflow-wrap: break-word;
 }
-
 
 
 /**
@@ -58,8 +55,6 @@ main {
   display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
 }
 
-
-
 /**
  * Images
  */
@@ -67,8 +62,6 @@ img {
   max-width: 100%;
   vertical-align: middle;
 }
-
-
 
 /**
  * Figures
@@ -80,8 +73,6 @@ figure > img {
 figcaption {
   font-size: $small-font-size;
 }
-
-
 
 /**
  * Lists
@@ -97,16 +88,12 @@ li {
   }
 }
 
-
-
 /**
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
 }
-
-
 
 /**
  * Links
@@ -134,24 +121,24 @@ a {
 }
 
 
-/**
- * Blockquotes
- */
-blockquote {
-  color: $brand-color;
-  border-left: 4px solid $border-color-01;
-  padding-left: $spacing-unit * .5;
-  @include relative-font-size(1.125);
-  font-style: italic;
+// /**
+//  * Blockquotes
+//  */
+// blockquote {
+//   color: $brand-color;
+//   border-left: 4px solid $border-color-01;
+//   padding-left: $spacing-unit * .5;
+//   @include relative-font-size(1.125);
+//   font-style: italic;
 
-  > :last-child {
-    margin-bottom: 0;
-  }
+//   > :last-child {
+//     margin-bottom: 0;
+//   }
 
-  i, em {
-    font-style: normal;
-  }
-}
+//   i, em {
+//     font-style: normal;
+//   }
+// }
 
 
 
@@ -203,7 +190,7 @@ pre {
   margin-left: auto;
   padding-right: $spacing-unit * .5;
   padding-left: $spacing-unit * .5;
-  @extend %clearfix;
+  //@extend %clearfix;
 
   @media screen and (min-width: $on-large) {
     max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
